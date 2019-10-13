@@ -15,7 +15,7 @@ class FindTest < Minitest::Test
   def test_no_waldo
     words = ["scarf", "sandcastle", "flag", "pretzel", "crow", "key"]
     found = words.find do |word|
-      # Your code goes here
+      word.length == 400
     end
     assert_equal nil, found
   end
